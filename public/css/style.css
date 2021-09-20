@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+
+}
+
+.headerPrincipal {
+    width: 100%;
+    background-color: #EAC926;
+    margin-bottom: 10px;
+    border: 10px;
+}
+
+.logo {
+    display: inline-block;
+    width: 40%;
+    
+}
+
+.barraBusqueda {
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    
+}
+
+
+.compraCuotas {
+    text-align: center;
+    
+}
+.compraCuotas p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.top-navs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.botton-navs ul {
+    list-style: none;
+}
+
+.botton-navs a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 20px;
+}
+
+.nav1,
+.nav2 {
+    display: none;
+}
+
+.menu-hambur {
+    margin: auto;
+    border-radius: 5px;
+    background-color: #03264C;
+    width: 50px;
+    text-align: center;
+    
+}
+
+.menu-hambur i {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+
+.banner {
+    margin: auto;
+    width: 100%;
+
+}
+
+
+
+
+
+.secciones {
+    margin: auto;
+}
+
+.producto {
+    margin: 10px 10px;
+    background-color: white;
+
+}
+
+.box-descripcion {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.producto img {
+    width: 90%;
+    margin: auto;
+}
+
+.producto i {
+    color: #39b54a;
+    border-radius: 50% ;
+    border: 1px solid #39b54a;
+    padding: 5px;
+    display: inline-block;
+    order: -1;
+    align-self: flex-start;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precio-descuento {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.precio {
+    font-size: 18px;
+    align-self: center;
+    flex-grow: 0.30;
+}
+
+.descuento {
+    flex-grow: 0.60;
+}
+
+.descuento,
+.desc {
+    font-size: 16px;
+    
+}
+
+.desc {
+    display: none;
+    position: relative;
+ }
+
+.descuento {
+    color: #39b54a;
+    align-self: center;
+    flex-grow: 0.70;
+}
+
+footer {
+    margin: auto;
+    background-color: white;
+}
+
+footer section {
+    text-align: center;
+}
+
+footer section article i {
+    color: #03264C;
+    font-size: 30px;
+}
+
+
+
+@media (min-width: 361px) {
+    .desc {
+        display: block;
+    }
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .nav1,
+    .nav2 {
+        display: block;
+    }
+    .menu-hambur {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .top-navs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .barra-busqueda {
+        width: 350px;
+    }
+
+    .compraCuotas {
+        display: inline-block;
+        text-align: center;
+        font-size: 20px;
+        max-width: 250px;
+    }
+
+    .compraCuotas p {
+        font-size: 20px;
+        text-align: right;
+    }
+    .botton-navs {
+        display: flex;
+    }
+
+    .botton-navs ul {
+        display: flex;
+    }
+
+    .botton-navs li {
+        margin: 0px 5px;
+    }
+    .botton-navs a {
+        font-size: 16px;
+    }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .producto {
+        width: 45%;
+    }
+   
+    
+}
+
+@media (min-width:1200px) {
+    .top-navs, .botton-navs {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .botton-navs {
+        justify-content: space-between;
+    }
+
+    .compraCuotas {
+        max-width: none;
+    }
+    .logo {
+        width: 250px;
+    }
+
+    .producto {
+        width: 23%;
+    }
+}
