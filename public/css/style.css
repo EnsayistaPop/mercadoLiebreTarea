@@ -11,24 +11,23 @@ body {
 }
 
 .headerPrincipal {
-    width: 100%;
     background-color: #EAC926;
     margin-bottom: 10px;
-    border: 10px;
 }
 
 .logo {
-    display: inline-block;
     width: 40%;
+    margin-top: 6px;
     
 }
 
-.barraBusqueda {
-    border-radius: 5px;
-    width: 70px;
+
+.barraBusqueda input {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     height: 35px;
-    text-align: center;
-    
+    border-radius: 5px;
 }
 
 
@@ -38,13 +37,16 @@ body {
 }
 .compraCuotas p {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px
 }
 
 .top-navs {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-around;
+    align-items: center;
 }
 
 .botton-navs ul {
@@ -59,26 +61,25 @@ body {
     font-size: 20px;
 }
 
-.nav1,
-.nav2 {
+nav ul {
     display: none;
 }
 
-.menu-hambur {
-    margin: auto;
-    border-radius: 5px;
-    background-color: #03264C;
-    width: 50px;
-    text-align: center;
-    
-}
-
 .menu-hambur i {
-    font-size: 20px;
+    display: inline-block;
     color: white;
-    padding: 10px;
+    background-color: #03264C;
+    width: 40px;
+    font-size: 25px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
 }
 
+.menu-hambur {
+    width: 40px;
+    margin: auto;
+}
 
 .banner {
     margin: auto;
@@ -118,9 +119,12 @@ body {
     border-radius: 50% ;
     border: 1px solid #39b54a;
     padding: 5px;
-    display: inline-block;
-    order: -1;
-    align-self: flex-start;
+    margin-left: 80%;
+    transition: transform 1s;
+}
+
+.producto:hover i {
+    transform: rotate(-90deg);
 }
 
 .titulares {
@@ -169,28 +173,59 @@ footer {
 footer section {
     text-align: center;
 }
-
+footer section article {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 20px;
+}
 footer section article i {
     color: #03264C;
     font-size: 30px;
+    margin-bottom: 6px;
+    transition: color 450ms;
+}
+
+footer section article i:hover {
+    color:#26507e ;
+    font-size: 50px;
+}
+
+footer header {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer .copy {
+    font-weight: bold;
 }
 
 
 
 @media (min-width: 361px) {
     .desc {
-        display: block;
+        transition: display 1s;
     }
-    .producto {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    .box-descripcion:hover .desc{
+        display: block;
     }
     .nav1,
     .nav2 {
         display: block;
     }
-    .menu-hambur {
-        display: none;
+
+    .producto {
+        transition: box-shadow, 1s;
     }
+
+    .producto:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -204,10 +239,6 @@ footer section article i {
         width: 200px;
     }
 
-    .barra-busqueda {
-        width: 350px;
-    }
-
     .compraCuotas {
         display: inline-block;
         text-align: center;
@@ -218,6 +249,7 @@ footer section article i {
     .compraCuotas p {
         font-size: 20px;
         text-align: right;
+        padding: 0px;
     }
     .botton-navs {
         display: flex;
@@ -243,6 +275,9 @@ footer section article i {
     .producto {
         width: 45%;
     }
+    .menu-hambur {
+        display: none;
+     }
    
     
 }
