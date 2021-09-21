@@ -1,23 +1,24 @@
 {
-    "name": "mercado-liebre",
-    "version": "1.0.0",
-    "description": " ###### Pablo Custodio Cruz: 22 años, escritor, futuro desarrollador web fullstack y coach ontológico.",
-    "main": "app.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/EnsayistaPop/mercadoLiebreTarea.git" 
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/EnsayistaPop/mercadoLiebreTarea/issues"
-    },
-    "homepage": "https://github.com/EnsayistaPop/mercadoLiebreTarea#readme",
-    "dependencies": {
-      "express": "^4.17.1"
-    }
-  }
+  "name": "mercado_liebre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnsayistaPop/mercadoLiebreTarea.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnsayistaPop/mercadoLiebreTarea/issues"
+  },
+  "homepage": "https://github.com/EnsayistaPop/mercadoLiebreTarea#readme"
+}
